@@ -1,18 +1,20 @@
-package com.collegeAdmissionapi.CollegeAdmissionSpringapi.Model;
+package com.collegeadmissionapp.model;
 
-import java.math.BigDecimal;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Data;
 import lombok.ToString;
 
 @Data
 @ToString
-@Entity(name="collegeapp_user")
+@Entity
+@Table(name="collegeapp_user")
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //AutoIncrement
@@ -29,7 +31,7 @@ public class User {
 	@Column(name="user_year_of_study")
 	private int year;
 	@Column(name="user_mark")
-	private BigDecimal mark;
+	private Float mark;
 	@Column(name="user_email")
 	private String email;
 	@Column(name="user_password")
@@ -38,6 +40,8 @@ public class User {
 	private String status;
 	@Column(name="user_branch")
 	private String branch;
+	@Column(name="fees_status")
+	private String fees;
 	
 	
 	

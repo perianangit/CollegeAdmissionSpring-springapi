@@ -8,7 +8,7 @@
 		<version>2.6.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.collegeAdmission-api</groupId>
+	<groupId>com.collegeadmissionapp</groupId>
 	<artifactId>CollegeAdmissionSpring-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CollegeAdmissionSpring-api</name>
